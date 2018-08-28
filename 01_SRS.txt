@@ -1,0 +1,48 @@
+Dairy
+
+* Login User Type [ 1.Admin  2.User(Employee)]
+
+* Customer Milk
+	*Unique Customer Code generation [CRN - Customer Registration Number]
+	*Milk Type	1. Cow 2.Buffalow
+	*Morning and Evening
+	*Milk Type - Milk Weight - Fat - SNF [Manually Fit allow]-Rate
+	1.All customer milk report 1]Daily 2.10Day's Report 3.Monthly Report 4. Yearly
+	
+
+* Loan Functionality
+
+* Animal Food 
+
+* Milk Sales to farmers
+
+* Message Integration Functionality [Customer morning and evening Liter with Rate]
+
+* Bonus Functionality [Yearly]
+
+
+Database
+1.User Master
+2.Customer Master - [Name,MobileNo,AdharNo,AccountNo,BankName,IFSC_Code,Address,MilkType]
+	A]tblMilkStorage - ID,CustoremerID,MilkType,Date,Shift,Weight,Fat,SNF,Rate	
+	B]tblLoadMaster - ID,CustomerID,Date,LoadAmount
+	B]tblBillingMaster - ID,CustomerID,MilkType,BillAmount,LoadAmountDiducted,Date
+
+3.Milk Type Master -[
+4.Cow Rate Master
+5.Buffalow Rate Master
+
+
+
+
+
+
+Note :  If time is AM then it's Morning time Milk
+	If time is PM then Milk store in Evening time with associcate CRN
+
+AM-Morning
+PM-Evening
+
+****************************************************************************
+
+Repository Name : DairySystem
